@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="个人网站，展示我的作品和技能">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="#home" aria-label="网站首页">欢迎来到我的网站</a></h1>
+            <nav aria-label="主导航">
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于</a></li>
+                    <li><a href="#services">服务</a></li>
+                    <li><a href="#contact">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>欢迎访问我的个人网站</h2>
+            <p class="subtitle">展示我的作品与技能，探索技术与设计的无限可能</p>
+            <a href="#services" class="btn">了解更多</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>关于我</h2>
+            <p>我是一名热爱技术和设计的开发者，专注于创建美观且实用的网站，致力于为用户提供最佳体验。</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>我的服务</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-paint-brush service-icon"></i>
+                    <h3>网站设计</h3>
+                    <p>提供专业的网站设计服务，确保您的网站美观且用户友好。</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-code service-icon"></i>
+                    <h3>前端开发</h3>
+                    <p>使用最新的前端技术，打造高性能的网站。</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-server service-icon"></i>
+                    <h3>后端开发</h3>
+                    <p>提供稳定的后端支持，确保您的网站运行顺畅。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>联系我</h2>
+            <form id="contact-form" aria-label="联系表单">
+                <div class="form-group">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="message">留言</label>
+                    <textarea id="message" name="message" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="btn">发送</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 我的个人网站. 保留所有权利.</p>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="微博"><i class="fab fa-weibo"></i></a>
+                <a href="#" class="social-link" aria-label="微信"><i class="fab fa-wechat"></i></a>
+                <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
